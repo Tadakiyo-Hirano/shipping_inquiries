@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>荷物問合せ</title>
+  </head>
+
+  <body>
+    <div>
+      <h1>ヤマト便</h1>
+      <form action="http://jizen.kuronekoyamato.co.jp/jizen/servlet/crjz.b.NQ0010?" method="get" target="_blank">
+        <p>
+          <input type="text" name="id">
+        </p>
+        <p>
+          <input type="submit" value="検索">
+        </p>
+      </form>
+    </div>
+-----------------------------------------------------------------------------
+    <div>
+      <h1>佐川急便</h1>
+      <form action="http://k2k.sagawa-exp.co.jp/p/web/okurijosearch.do?" method="get" target="_blank">
+        <p>
+          <input type="text" name="okurijoNo">
+        </p>
+        <p>
+          <input type="submit" value="検索">
+        </p>
+      </form>
+    </div>
+-----------------------------------------------------------------------------
+    <div>
+      <h1>日本郵便</h1>
+      <form action="http://tracking.post.japanpost.jp/service/singleSearch.do?org.apache.struts.taglib.html.TOKEN=&searchKind=S002&locale=ja&SVID=&reqCodeNo1?" method="get" target="_blank">
+        <p>
+          <input type="text" name="reqCodeNo1">
+        </p>
+        <p>
+          <input type="submit" value="検索">
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
+
+<style>
+  input[type=text] {
+    width: 400px;
+    height: 40px;
+    font-size: 2em;
+  }
+  input[type=submit] {
+    width: 200px;
+    height: 40px;
+    font-size: 2em;
+  }
+</style>
